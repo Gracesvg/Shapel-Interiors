@@ -1,23 +1,22 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 # Create your views here.
 def index(request):
-    return HttpResponse('<h1>home page</h1>')
+    return render(request, 'shapelinterior/index.html', {})
 
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'shapelinterior/About.html', {})
 
 
 def blog(request):
-    return render(request, 'blog.html')
+    return render(request, 'shapelinterior/blog.html', {})
 
 
 def gallery(request):
-    return render(request, 'gallery.html')
+    return render(request, 'shapelinterior/gallery.html', {})
 
 
 def service(request):
-    return render(request, 'service.html')
+    return render(request, 'shapelinterior/service.html', {})
