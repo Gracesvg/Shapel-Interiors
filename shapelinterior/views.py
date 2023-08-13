@@ -7,7 +7,7 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'shapelinterior/About.html', {})
+    return render(request, 'shapelinterior/about.html', {})
 
 
 def blog(request):
