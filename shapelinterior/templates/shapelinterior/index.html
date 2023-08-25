@@ -35,6 +35,7 @@
 </head>
 
 <body>
+    {% csrf_token %}
 {% load static %}
   <!-- header section strats -->
   <header class="header_section">
@@ -364,7 +365,31 @@
       </div>
       <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+{#          <div class="carousel-item active">#}
+{#            <div class="row">#}
+{#              <div class="col-md-11 col-lg-10 mx-auto">#}
+{#                <div class="box">#}
+{#                  <div class="img-box">#}
+{#                    <img src="{% static 'images/client.jpg' %}" alt="" />#}
+{#                  </div>#}
+{#                  <div class="detail-box">#}
+{#                    <div class="name">#}
+{#                      <h6>#}
+{#                        Siaalya#}
+{#                      </h6>#}
+{#                    </div>#}
+{#                    <p>#}
+{#                      It is a long established fact that a reader will be#}
+{#                      distracted by the readable cIt is a long established fact#}
+{#                      that a reader will be distracted by the readable c#}
+{#                    </p>#}
+{#                    <i class="fa fa-quote-left" aria-hidden="true"></i>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+          <div class="carousel-item">
             <div class="row">
               <div class="col-md-11 col-lg-10 mx-auto">
                 <div class="box">
@@ -374,13 +399,11 @@
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Siaalya
+                        Meg
                       </h6>
                     </div>
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
+                     Working with this rather large group has enabled me to open my mind to a possibility of interesting spaces.
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -398,37 +421,11 @@
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Siaalya
+                        John jay
                       </h6>
                     </div>
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="{% static 'images/client.jpg' %}" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Siaalya
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
+                        Shapel interiors has given me something to be joyous about as my living space is a unique combination of peace and art.
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -529,7 +526,7 @@
               </a>
             </h4>
             <p class="mb-0">
-              Asperiores at, error, delectus aut voluptatem provident cum quam magni necessitatibus molestias eveniet reprehenderit maiores voluptate.
+                A breathe of class and unique masterpieces that brings together communities
             </p>
           </div>
         </div>
@@ -557,7 +554,7 @@
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call +254 778896894
+                gracemzerah71@gmail.com
               </span>
             </a>
             <a href="">
